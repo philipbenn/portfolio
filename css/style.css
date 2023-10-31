@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #222;
+    color: #fff;
+    overflow: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f1f1f1;
+}
+
+/*--------------header section -------------*/
+
+nav {
+    padding: 10px 0px 0px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 10vh;
+    position: fixed;
+    background-color: #222;
+    z-index: 1;
+}
+
+nav ul {
+    margin-right: 10%;
+}
+
+.logo {
+    width: 160px;
+    margin-left: 113%;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.header-text {
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 10%;
+    font-size: 30px;
+}
+
+.header-text h1 {
+    font-size: 60px;
+}
+
+.header-text h1 span {
+    color: #ff004f;
+}
+
+/*--------------slideshow section -------------*/
+
+.slideshow-container {
+    position: relative;
+    float: right;
+    margin-right: 10%;
+    overflow: hidden;
+    margin-top: 5%
+}
+
+.mySlides {
+    display: none;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+    width: 40vw;
+    height: 80vh;
+}
+
+.mySlides img {
+    margin-top: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 15px 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+.title {
+    position: relative;
+}
+
+.title::after {
+    content: '';
+    width: 30%;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+}
+
+/*--------------about section -------------*/
+
+.about-container {
+    width: 60vw;
+    margin: 0 auto;
+    display: flex;
+    padding: 10% 0;
+}
+
+.col {
+
+    width: 30%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.col ul li {
+    display: inline-block;
+    margin: 10px 20px;
+
+}
+
+.col ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    cursor: pointer;
+}
+
+.col h1 {
+    font-size: 72px;
+    font-weight: 400;
+}
+
+.col-description {
+    border: 2px solid #fff;
+    border-radius: 10px;
+    height: 40.5vh;
+    width: 51.5vw;
+
+}
+
+.col img {
+    width: 80%;
+    border-radius: 10px;
+}
+
+.col ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+.col ul li a:hover::after {
+    width: 100%;
+}
+
+/*--------------bs section -------------*/
+
+.bs-container {
+    width: 60vw;
+    margin: 0 auto;
+    display: flex;
+    padding: 10% 0;
+}
+
+/*--------------scroll-bar section -------------*/
+
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: red;
+}
