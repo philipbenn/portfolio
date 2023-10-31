@@ -1,74 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="/css/style.css">
-</head>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
 
-<body>
+  <body>
 
-    <!--------------header section -------------->
+    <!--------------Navbar Section -------------->
 
     <p id="home"></p>
     <nav>
-        <a href="#home">
-        <img src="/Images/phillogo.png" class="logo">
-        </a>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+      <a href="#home">
+        <img src="/Images/phillogo.png" class="logo" />
+      </a>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
     </nav>
 
+    <!--------------Header Text Section -------------->
+
     <div class="header-text">
-        <p>Frontend / Fullstack</p>
-        <h1>Hi My Name Is <br><span>Philip Schønning</span><br> & This Is My Portfolio</h1>
+      <p>Frontend / Fullstack</p>
+      <h1>
+        Hi My Name Is <br /><span>Philip Schønning</span><br />
+        & This Is My Portfolio
+      </h1>
     </div>
 
-    <!--------------slideshow section -------------->
+   <!--------------Slideshow Section -------------->
 
     <div class="slideshow-container">
-        <h1 class="title">Previous Projects:</h1>
-        <div class="mySlides">
-            <a href="https://github.com/philipbenn/BilAbonnement.git" target="_blank">
-                <img src="/Images/bildash.png" alt="Image 1">
-            </a>
-        </div>
-        <div class="mySlides">
-            <a href="https://github.com/philipbenn/BilAbonnement.git" target="_blank">
-                <img src="/Images/biltable.png" alt="Image 2">
-            </a>
-        </div>
+      <h1 class="title">My Projects:</h1>
+      <div class="mySlides">
+        <a
+          href="https://github.com/philipbenn/BilAbonnement.git"
+          target="_blank"
+        >
+          <img src="/Images/bildash.png" alt="Image 1" />
+        </a>
+      </div>
+      <div class="mySlides">
+        <a
+          href="https://github.com/philipbenn/BilAbonnement.git"
+          target="_blank"
+        >
+          <img src="/Images/biltable.png" alt="Image 2" />
+        </a>
+      </div>
 
-        <div class="mySlides">
-            <a href="https://github.com/philipbenn/BlomBiler.git" target="_blank">
-                <img src="/Images/blomlogin.png" alt="Image 3">
-            </a>
-        </div>
+      <div class="mySlides">
+        <a href="https://github.com/philipbenn/BlomBiler.git" target="_blank">
+          <img src="/Images/blomlogin.png" alt="Image 3" />
+        </a>
+      </div>
 
-        <div class="mySlides">
-            <a href="https://github.com/philipbenn/BlomBiler.git" target="_blank">
-                <img src="/Images/blombilview.png" alt="Image 4">
-            </a>
-        </div>
+      <div class="mySlides">
+        <a href="https://github.com/philipbenn/BlomBiler.git" target="_blank">
+          <img src="/Images/blombilview.png" alt="Image 4" />
+        </a>
+      </div>
 
-        <div style="text-align:center;">
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-        </div>
+      <div style="text-align: center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
     </div>
 
+    <!--------------Blom Biler Section -------------->
 
-    <!--------------about section -------------->
+    <div class="project-section blombiler">
+      <div class="project-content">
+        <div class="project-slideshow">
+          <div class="project-slide">
+            <a
+              href="https://github.com/philipbenn/BlomBiler.git"
+              target="_blank"
+            >
+              <img src="/Images/blomlogin.png" alt="Blom Biler Image 1" />
+            </a>
+          </div>
+          <div class="project-slide">
+            <a
+              href="https://github.com/philipbenn/BlomBiler.git"
+              target="_blank"
+            >
+              <img src="/Images/blombilview.png" alt="Blom Biler Image 2" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="project-description">
+        <h1>Blom Biler</h1>
+        <p>Blom biler</p>
+      </div>
+    </div>
 
-    <script src="/js/slideshow.js"></script>
-</body>
+    <!--------------Bilabonnoment Section -------------->
 
+    <div class="project-section bilabonnement">
+      <div class="project-content">
+        <div class="project-slideshow">
+          <div class="project-slide">
+            <a
+              href="https://github.com/philipbenn/BilAbonnement.git"
+              target="_blank"
+            >
+              <img src="/Images/bildash.png" alt="Bilabonnement Image 1" />
+            </a>
+          </div>
+          <div class="project-slide">
+            <a
+              href="https://github.com/philipbenn/BilAbonnement.git"
+              target="_blank"
+            >
+              <img src="/Images/biltable.png" alt="Bilabonnement Image 2" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="project-description">
+        <h1>Bilabonnoment</h1>
+        <p>bilabonnoment</p>
+      </div>
+    </div>
+
+     <!--------------Kino XP Section -------------->
+
+     <div class="project-section kinoxp">
+        <div class="project-content">
+          <div class="project-slideshow">
+            <div class="project-slide">
+              <a
+                href="https://github.com/Scrumbledore-s-Army"
+                target="_blank"
+              >
+                <img src="/Images/biomovies.png" alt="kinoxp Image 1" />
+              </a>
+            </div>
+            <div class="project-slide">
+              <a
+                href="https://github.com/Scrumbledore-s-Army"
+                target="_blank"
+              >
+                <img src="/Images/bioseat.png" alt="kinoxp Image 2" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="project-description">
+          <h1>Kino XP</h1>
+          <p>Kino XP</p>
+        </div>
+      </div>
+
+    <script src="/js/showSlides.js"></script>
+    <script src="/js/pastProjects.js"></script>
+  </body>
 </html>

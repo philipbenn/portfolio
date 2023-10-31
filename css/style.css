@@ -12,8 +12,7 @@ body {
     background: #222;
     color: #fff;
     overflow: auto;
-    scrollbar-width: thin;
-    scrollbar-color: #888 #f1f1f1;
+   
 }
 
 /*--------------header section -------------*/
@@ -88,9 +87,8 @@ nav ul li a:hover::after {
 .slideshow-container {
     position: relative;
     float: right;
-    margin-right: 10%;
     overflow: hidden;
-    margin-top: 5%
+    margin: 5% 10% 10% 0
 }
 
 .mySlides {
@@ -129,7 +127,7 @@ nav ul li a:hover::after {
 
 .title::after {
     content: '';
-    width: 30%;
+    width: 20%;
     height: 3px;
     background: #ff004f;
     position: absolute;
@@ -137,92 +135,49 @@ nav ul li a:hover::after {
     bottom: 0px;
 }
 
-/*--------------about section -------------*/
+/*--------------blombiler slideshow section -------------*/
 
-.about-container {
-    width: 60vw;
-    margin: 0 auto;
-    display: flex;
-    padding: 10% 0;
+.project-section {
+    text-align: center;
+    clear: both;
+    margin: 5% 0 0 5%;
 }
 
-.col {
-
-    width: 30%;
-    padding: 10px;
-    box-sizing: border-box;
-}
-
-.col ul li {
+.project-section .project-content {
     display: inline-block;
-    margin: 10px 20px;
-
+    width: 60%; 
+    float: left;
 }
 
-.col ul li a {
-    color: #fff;
-    text-decoration: none;
+.project-section .project-description {
+    display: inline-block;
+    width: 40%; 
+    padding: 20px;
+}
+
+.project-section h1 {
+    font-size: 48px;
+    color: #ff004f;
+}
+
+.project-section p {
     font-size: 18px;
-    position: relative;
-    cursor: pointer;
+    margin: 10px 0;
 }
 
-.col h1 {
-    font-size: 72px;
-    font-weight: 400;
+.project-slideshow {
+    margin: 20px 0;
 }
 
-.col-description {
-    border: 2px solid #fff;
-    border-radius: 10px;
-    height: 40.5vh;
-    width: 51.5vw;
-
+.project-slide {
+    display: none;
 }
 
-.col img {
-    width: 80%;
-    border-radius: 10px;
-}
-
-.col ul li a::after {
-    content: '';
-    width: 0;
-    height: 3px;
-    background: #ff004f;
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    transition: 0.5s;
-}
-
-.col ul li a:hover::after {
+.project-slide img {
     width: 100%;
-}
-
-/*--------------bs section -------------*/
-
-.bs-container {
-    width: 60vw;
-    margin: 0 auto;
-    display: flex;
-    padding: 10% 0;
-}
-
-/*--------------scroll-bar section -------------*/
-
-body::-webkit-scrollbar {
-    width: 8px;
-}
-
-body::-webkit-scrollbar-track {
-    background: #f1f1f1;
-}
-
-body::-webkit-scrollbar-thumb {
-    background: #888;
-}
-
-body::-webkit-scrollbar-thumb:hover {
-    background: red;
+    max-width: 1000px;
+    height: 600px;
+    margin: 0 0 2% 3%;
+    border-radius: 10px;
+    float: left;
 }
