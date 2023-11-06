@@ -25,4 +25,3 @@ function showSlides() {
 
   setTimeout(showSlides, 10000);
 }
-

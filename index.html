@@ -8,8 +8,7 @@
   </head>
 
   <body>
-
-    <!--------------Navbar Section -------------->
+    <!-------------- Navbar Section -------------->
 
     <p id="home"></p>
     <nav>
@@ -18,13 +17,13 @@
       </a>
       <ul>
         <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#">Portfolio</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#">About</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
     </nav>
 
-    <!--------------Header Text Section -------------->
+    <!-------------- Header Text Section -------------->
 
     <div class="header-text">
       <p>Frontend / Fullstack</p>
@@ -34,10 +33,10 @@
       </h1>
     </div>
 
-   <!--------------Slideshow Section -------------->
+    <!-------------- Slideshow Section -------------->
 
     <div class="slideshow-container">
-      <h1 class="title">My Projects:</h1>
+      <h1 class="title">Projects:</h1>
       <div class="mySlides">
         <a
           href="https://github.com/philipbenn/BilAbonnement.git"
@@ -67,102 +66,150 @@
         </a>
       </div>
 
+      <div class="mySlides">
+        <a
+          href="https://github.com/orgs/Scrumbledore-s-Army/repositories"
+          target="_blank"
+        >
+          <img src="/Images/biomovies.png" alt="Image 5" />
+        </a>
+      </div>
+
+      <div class="mySlides">
+        <a
+          href="https://github.com/orgs/Scrumbledore-s-Army/repositories"
+          target="_blank"
+        >
+          <img src="/Images/bioseat.png" alt="Image 6" />
+        </a>
+      </div>
+
       <div style="text-align: center">
         <span class="dot"></span>
         <span class="dot"></span>
         <span class="dot"></span>
         <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
       </div>
     </div>
 
-    <!--------------Blom Biler Section -------------->
+    <!-------------- Blom Biler Section -------------->
 
     <div class="project-section blombiler">
+      <p id="projects"></p>
       <div class="project-content">
-        <div class="project-slideshow">
-          <div class="project-slide">
-            <a
-              href="https://github.com/philipbenn/BlomBiler.git"
-              target="_blank"
-            >
-              <img src="/Images/blomlogin.png" alt="Blom Biler Image 1" />
-            </a>
-          </div>
-          <div class="project-slide">
-            <a
-              href="https://github.com/philipbenn/BlomBiler.git"
-              target="_blank"
-            >
-              <img src="/Images/blombilview.png" alt="Blom Biler Image 2" />
-            </a>
-          </div>
+        <div class="slideshow-container">
+          <a
+            class="github"
+            href="https://github.com/philipbenn/BlomBiler.git"
+            target="_blank"
+          >
+            <img
+              src="/Images/blomlogin.png"
+              alt="Blom Biler Image 1"
+              class="project-image"
+            />
+            <img
+              src="/Images/blombilview.png"
+              alt="Blom Biler Image 2"
+              class="project-image"
+            />
+          </a>
+          <button class="prev" onclick="changeSlide(-1, 'blombiler')">❮</button>
+          <button class="next" onclick="changeSlide(1, 'blombiler')">❯</button>
         </div>
       </div>
+
       <div class="project-description">
         <h1>Blom Biler</h1>
-        <p>Blom biler</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore
+          eveniet excepturi incidunt, quis voluptatum sapiente repellendus
+          expedita eius, consectetur ullam enim natus blanditiis explicabo
+          minima repellat hic. Officia, soluta facere?
+        </p>
       </div>
     </div>
 
-    <!--------------Bilabonnoment Section -------------->
+    <!-------------- Bil Abonnoment Section -------------->
 
-    <div class="project-section bilabonnement">
+    <div class="project-section bilabonnoment">
       <div class="project-content">
-        <div class="project-slideshow">
-          <div class="project-slide">
-            <a
-              href="https://github.com/philipbenn/BilAbonnement.git"
-              target="_blank"
-            >
-              <img src="/Images/bildash.png" alt="Bilabonnement Image 1" />
-            </a>
-          </div>
-          <div class="project-slide">
-            <a
-              href="https://github.com/philipbenn/BilAbonnement.git"
-              target="_blank"
-            >
-              <img src="/Images/biltable.png" alt="Bilabonnement Image 2" />
-            </a>
-          </div>
+        <div class="slideshow-container">
+          <a
+            class="github"
+            href="https://github.com/philipbenn/BilAbonnement.git"
+            target="_blank"
+          >
+            <img
+              src="/Images/bildash.png"
+              alt="Bil Dashboard Image 1"
+              class="project-image"
+            />
+            <img
+              src="/Images/biltable.png"
+              alt="Bil Table Image 2"
+              class="project-image"
+            />
+          </a>
+          <button class="prev" onclick="changeSlide(-1, 'bilabonnoment')">
+            ❮
+          </button>
+          <button class="next" onclick="changeSlide(1, 'bilabonnoment')">
+            ❯
+          </button>
         </div>
       </div>
+
       <div class="project-description">
-        <h1>Bilabonnoment</h1>
-        <p>bilabonnoment</p>
+        <h1>Bil Abonnoment</h1>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          Reprehenderit dolor molestiae quo voluptatibus sequi, deleniti
+          doloremque iste possimus voluptate esse corporis et cumque omnis a
+          cupiditate autem, accusamus architecto nulla.
+        </p>
       </div>
     </div>
 
-     <!--------------Kino XP Section -------------->
-
-     <div class="project-section kinoxp">
-        <div class="project-content">
-          <div class="project-slideshow">
-            <div class="project-slide">
-              <a
-                href="https://github.com/Scrumbledore-s-Army"
-                target="_blank"
-              >
-                <img src="/Images/biomovies.png" alt="kinoxp Image 1" />
-              </a>
-            </div>
-            <div class="project-slide">
-              <a
-                href="https://github.com/Scrumbledore-s-Army"
-                target="_blank"
-              >
-                <img src="/Images/bioseat.png" alt="kinoxp Image 2" />
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="project-description">
-          <h1>Kino XP</h1>
-          <p>Kino XP</p>
+    <!-------------- Kino xp Section -------------->
+    <div class="project-section kinoxp">
+      <div class="project-content">
+        <div class="slideshow-container">
+          <a
+            class="github"
+            href="https://github.com/orgs/Scrumbledore-s-Army/repositories"
+            target="_blank"
+          >
+            <img
+              src="/Images/biomovies.png"
+              alt="Bio Movies Image 1"
+              class="project-image"
+            />
+            <img
+              src="/Images/bioseat.png"
+              alt="Bio Seats Image 2"
+              class="project-image"
+            />
+          </a>
+          <button class="prev" onclick="changeSlide(-1, 'kinoxp')">❮</button>
+          <button class="next" onclick="changeSlide(1, 'kinoxp')">❯</button>
         </div>
       </div>
 
-    <script src="/js/showSlides.js"></script>
+      <div class="project-description">
+        <h1>Kino XP</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Exercitationem magnam quisquam quam vero quas sint accusantium. Ullam,
+          saepe dicta? Consequatur, ullam accusamus perspiciatis consequuntur
+          neque at animi aut sint. Vero.
+        </p>
+      </div>
+    </div>
+
+    <script src="/js/slideshow.js"></script>
     <script src="/js/pastProjects.js"></script>
   </body>
 </html>
