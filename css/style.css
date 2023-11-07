@@ -12,6 +12,7 @@ body {
   background: #222;
   color: #fff;
   overflow: auto;
+  font-size: 20px;
 }
 
 /*-------------- navbar section -------------*/
@@ -34,8 +35,8 @@ nav ul {
 }
 
 .logo {
-  width: 160px;
-  margin-left: 66%;
+  width: 50%;
+  margin-left: 100%;
 }
 
 nav ul li {
@@ -47,7 +48,7 @@ nav ul li {
 nav ul li a {
   color: #fff;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 28px;
   position: relative;
 }
 
@@ -68,13 +69,13 @@ nav ul li a:hover::after {
 
 .header-text {
   position: absolute;
-  margin-top: 10%;
+  margin-top: 15%;
   margin-left: 10%;
-  font-size: 30px;
+  font-size: 2rem;
 }
 
 .header-text h1 {
-  font-size: 60px;
+  font-size: 4rem;
 }
 
 .header-text h1 span {
@@ -126,7 +127,7 @@ nav ul li a:hover::after {
 
 .title::after {
   content: "";
-  width: 16%;
+  width: 13%;
   height: 3px;
   background: #ff004f;
   position: absolute;
@@ -144,7 +145,6 @@ nav ul li a:hover::after {
 
 .project-section .project-content {
   display: inline-block;
-  width: 60%;
   float: left;
 }
 
@@ -152,16 +152,18 @@ nav ul li a:hover::after {
   display: inline-block;
   width: 40%;
   padding: 20px;
-  margin-top: 8%;
+  margin-top: 10%;
 }
 
 .project-section h1 {
-  font-size: 48px;
+  width: 80%;
+  font-size: 3rem;
   color: #ff004f;
 }
 
 .project-section p {
-  font-size: 18px;
+  width: 80%;
+  font-size: 1rem;
   margin: 10px 0;
 }
 
@@ -171,8 +173,8 @@ nav ul li a:hover::after {
 
 .project-content img {
   width: 100%;
-  max-width: 1000px;
-  height: 600px;
+  max-width: 1400px;
+  height: 800px;
   border-radius: 10px;
   float: left;
 }
@@ -190,7 +192,7 @@ nav ul li a:hover::after {
   color: #fff;
   border: none;
   border-radius: 5px;
-  padding: 10px 15px;
+  padding: 15px 20px;
   font-size: 16px;
   transition: background-color 0.3s;
   cursor: pointer;
@@ -201,7 +203,7 @@ nav ul li a:hover::after {
   color: #fff;
   border: none;
   border-radius: 5px;
-  padding: 10px 15px;
+  padding: 15px 20px;
   font-size: 16px;
   transition: background-color 0.3s;
   cursor: pointer;
@@ -223,3 +225,99 @@ nav ul li a:hover::after {
 .github {
   cursor: pointer;
 }
+
+/*-------------- responsive sizes section -------------*/
+
+/* Small screens (e.g., smartphones) */
+@media (max-width: 768px) {
+  .header-text {
+    font-size: 1.75rem;
+  }
+
+  .header-text h1 {
+    font-size: 3rem;
+  }
+
+  .project-section h1 {
+    font-size: 2rem;
+  }
+
+  .project-section p {
+    font-size: 1rem;
+  }
+
+  .logo {
+    width: 30%;
+  }
+
+  .mySlides img {
+    width: 90%;
+  }
+
+  .project-content img {
+    width: 100%;
+  }
+}
+
+/* Medium screens (e.g., tablets) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .header-text {
+    font-size: 2.25rem;
+  }
+
+  .header-text h1 {
+    font-size: 4rem;
+  }
+
+  .project-section h1 {
+    font-size: 3rem;
+  }
+
+  .project-section p {
+    font-size: 1.5rem;
+  }
+
+  .logo {
+    width: 60%;
+  }
+
+  .mySlides img {
+    width: 80%;
+  }
+
+  .project-content img {
+    width: 90%;
+  }
+}
+
+/* Large screens (e.g., desktops) */
+@media (min-width: 1025px) {
+  .header-text {
+    font-size: 3rem;
+  }
+
+  .header-text h1 {
+    font-size: 5rem;
+  }
+
+  .project-section h1 {
+    font-size: 4rem;
+  }
+
+  .project-section p {
+    font-size: 2rem;
+  }
+
+  .logo {
+    width: 90%;
+  }
+
+  .mySlides img {
+    width: 100%;
+  }
+
+  .project-content img {
+    width: 100%;
+  }
+}
+

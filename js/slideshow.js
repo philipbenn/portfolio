@@ -2,6 +2,8 @@ function changeSlide(n, project) {
   const slides = document.querySelectorAll(`.${project} .project-image`);
   let currentSlide = 0;
 
+  slides[currentSlide].style.display = "none";
+
   slides.forEach((slide, index) => {
     if (slide.style.display === "block") {
       currentSlide = index;
