@@ -24,7 +24,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-top: 80px;
+  margin-top: 200px;
 }
 
 .row.top {
@@ -33,6 +33,12 @@ body {
 
 .col-right {
   margin-left: 20px;
+}
+
+.col-right h1 {
+  display: flex;
+  justify-content: center;
+  color: #ff004f;
 }
 
 @media (max-width: 768px) {
@@ -111,6 +117,7 @@ nav ul li a:hover::after {
 
 .header-text {
   font-size: 3rem;
+  margin-top: 150px;
 }
 
 .header-text h1 {
@@ -138,9 +145,8 @@ nav ul li a:hover::after {
 .mySlides {
   display: none;
   opacity: 0;
-  transition: opacity 2s ease-in-out;
   width: 40vw;
-  height: 40vw;
+  height: 35vw;
 }
 
 .mySlides img {
