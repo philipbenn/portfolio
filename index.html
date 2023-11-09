@@ -7,99 +7,109 @@
     <link rel="stylesheet" href="/css/style.css" />
   </head>
 
+<!--TODO MAKE PROJECT SECTION RESPONSIVE-->
+
   <body>
-    <!-------------- Navbar Section -------------->
-
-    <p id="home"></p>
-    <nav>
-      <a href="#home">
-        <img src="/Images/phillogo.png" class="logo" />
-      </a>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-
-    <!-------------- Header Text Section -------------->
-
-    <div class="header-text">
-      <p>Frontend / Fullstack</p>
-      <h1>
-        Hi My Name Is <br /><span>Philip Schønning</span><br />
-        & This Is My Portfolio
-      </h1>
-    </div>
-
-    <!-------------- Slideshow Section -------------->
-
-    <div class="slideshow-container">
-      <h1 class="title">Projects:</h1>
-      <div class="mySlides">
-        <a
-          href="https://github.com/philipbenn/BilAbonnement.git"
-          target="_blank"
-        >
-          <img src="/Images/bildash.png" alt="Image 1" />
+    <div class="page">
+      <!-------------- Navbar Section -------------->
+      <p id="home"></p>
+      <nav>
+        <a href="#home">
+          <img src="/Images/phillogo.png" class="logo" />
         </a>
-      </div>
-      <div class="mySlides">
-        <a
-          href="https://github.com/philipbenn/BilAbonnement.git"
-          target="_blank"
-        >
-          <img src="/Images/biltable.png" alt="Image 2" />
-        </a>
-      </div>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
 
-      <div class="mySlides">
-        <a href="https://github.com/philipbenn/BlomBiler.git" target="_blank">
-          <img src="/Images/blomlogin.png" alt="Image 3" />
-        </a>
-      </div>
+      <div class="row top">
+        <!-------------- Header Text Section -------------->
 
-      <div class="mySlides">
-        <a href="https://github.com/philipbenn/BlomBiler.git" target="_blank">
-          <img src="/Images/blombilview.png" alt="Image 4" />
-        </a>
-      </div>
+        <div class="header-text">
+          <p>Frontend / Fullstack</p>
+          <h1>
+            Hi My Name Is <br /><span>Philip Schønning</span><br />
+            & This Is My Portfolio
+          </h1>
+        </div>
 
-      <div class="mySlides">
-        <a
-          href="https://github.com/orgs/Scrumbledore-s-Army/repositories"
-          target="_blank"
-        >
-          <img src="/Images/biomovies.png" alt="Image 5" />
-        </a>
-      </div>
+        <!-------------- Slideshow Section -------------->
 
-      <div class="mySlides">
-        <a
-          href="https://github.com/orgs/Scrumbledore-s-Army/repositories"
-          target="_blank"
-        >
-          <img src="/Images/bioseat.png" alt="Image 6" />
-        </a>
-      </div>
-
-      <div style="text-align: center">
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-      </div>
-    </div>
-
-    <!-------------- Blom Biler Section -------------->
-
-    <div class="project-section blombiler">
-      <p id="projects"></p>
-      <div class="project-content">
         <div class="slideshow-container">
+          <h1 class="title">Projects:</h1>
+          <div class="mySlides">
+            <a
+              href="https://github.com/philipbenn/BilAbonnement.git"
+              target="_blank"
+            >
+              <img src="/Images/bildash.png" alt="Image 1" />
+            </a>
+          </div>
+          <div class="mySlides">
+            <a
+              href="https://github.com/philipbenn/BilAbonnement.git"
+              target="_blank"
+            >
+              <img src="/Images/biltable.png" alt="Image 2" />
+            </a>
+          </div>
+
+          <div class="mySlides">
+            <a
+              href="https://github.com/philipbenn/BlomBiler.git"
+              target="_blank"
+            >
+              <img src="/Images/blomlogin.png" alt="Image 3" />
+            </a>
+          </div>
+
+          <div class="mySlides">
+            <a
+              href="https://github.com/philipbenn/BlomBiler.git"
+              target="_blank"
+            >
+              <img src="/Images/blombilview.png" alt="Image 4" />
+            </a>
+          </div>
+
+          <div class="mySlides">
+            <a
+              href="https://github.com/orgs/Scrumbledore-s-Army/repositories"
+              target="_blank"
+            >
+              <img src="/Images/biomovies.png" alt="Image 5" />
+            </a>
+          </div>
+
+          <div class="mySlides">
+            <a
+              href="https://github.com/orgs/Scrumbledore-s-Army/repositories"
+              target="_blank"
+            >
+              <img src="/Images/bioseat.png" alt="Image 6" />
+            </a>
+          </div>
+
+          <div style="text-align: center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-------------- Blom Biler Section -------------->
+
+        <p id="projects"></p>
+
+        <div class="blombiler">
           <a
             class="github"
             href="https://github.com/philipbenn/BlomBiler.git"
@@ -116,27 +126,30 @@
               class="project-image"
             />
           </a>
-          <button class="prev" onclick="changeSlide(-1, 'blombiler')">❮</button>
-          <button class="next" onclick="changeSlide(1, 'blombiler')">❯</button>
+          <div class="button-container">
+            <button class="prev" onclick="changeSlide(-1, 'blombiler')">
+              ❮
+            </button>
+            <button class="next" onclick="changeSlide(1, 'blombiler')">
+              ❯
+            </button>
+          </div>
+        </div>
+
+        <div class="col-right">
+          <h1>Blom Biler</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore
+            eveniet excepturi incidunt, quis voluptatum sapiente repellendus
+            expedita eius, consectetur ullam enim natus blanditiis explicabo
+            minima repellat hic. Officia, soluta facere?
+          </p>
         </div>
       </div>
+      <!-------------- Bil Abonnoment Section -------------->
 
-      <div class="project-description">
-        <h1>Blom Biler</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore
-          eveniet excepturi incidunt, quis voluptatum sapiente repellendus
-          expedita eius, consectetur ullam enim natus blanditiis explicabo
-          minima repellat hic. Officia, soluta facere?
-        </p>
-      </div>
-    </div>
-
-    <!-------------- Bil Abonnoment Section -------------->
-
-    <div class="project-section bilabonnoment">
-      <div class="project-content">
-        <div class="slideshow-container">
+      <div class="row">
+        <div class="bilabonnoment">
           <a
             class="github"
             href="https://github.com/philipbenn/BilAbonnement.git"
@@ -153,30 +166,30 @@
               class="project-image"
             />
           </a>
-          <button class="prev" onclick="changeSlide(-1, 'bilabonnoment')">
-            ❮
-          </button>
-          <button class="next" onclick="changeSlide(1, 'bilabonnoment')">
-            ❯
-          </button>
+          <div class="button-container">
+            <button class="prev" onclick="changeSlide(-1, 'bilabonnoment')">
+              ❮
+            </button>
+            <button class="next" onclick="changeSlide(1, 'bilabonnoment')">
+              ❯
+            </button>
+          </div>
+        </div>
+
+        <div class="col-right">
+          <h1>Bil Abonnoment</h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Reprehenderit dolor molestiae quo voluptatibus sequi, deleniti
+            doloremque iste possimus voluptate esse corporis et cumque omnis a
+            cupiditate autem, accusamus architecto nulla.
+          </p>
         </div>
       </div>
 
-      <div class="project-description">
-        <h1>Bil Abonnoment</h1>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-          Reprehenderit dolor molestiae quo voluptatibus sequi, deleniti
-          doloremque iste possimus voluptate esse corporis et cumque omnis a
-          cupiditate autem, accusamus architecto nulla.
-        </p>
-      </div>
-    </div>
-
-    <!-------------- Kino xp Section -------------->
-    <div class="project-section kinoxp">
-      <div class="project-content">
-        <div class="slideshow-container">
+      <!-------------- Kino xp Section -------------->
+      <div class="row">
+        <div class="kinoxp">
           <a
             class="github"
             href="https://github.com/orgs/Scrumbledore-s-Army/repositories"
@@ -193,19 +206,21 @@
               class="project-image"
             />
           </a>
-          <button class="prev" onclick="changeSlide(-1, 'kinoxp')">❮</button>
-          <button class="next" onclick="changeSlide(1, 'kinoxp')">❯</button>
+          <div class="button-container">
+            <button class="prev" onclick="changeSlide(-1, 'kinoxp')">❮</button>
+            <button class="next" onclick="changeSlide(1, 'kinoxp')">❯</button>
+          </div>
         </div>
-      </div>
 
-      <div class="project-description">
-        <h1>Kino XP</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Exercitationem magnam quisquam quam vero quas sint accusantium. Ullam,
-          saepe dicta? Consequatur, ullam accusamus perspiciatis consequuntur
-          neque at animi aut sint. Vero.
-        </p>
+        <div class="col-right">
+          <h1>Kino XP</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Exercitationem magnam quisquam quam vero quas sint accusantium.
+            Ullam, saepe dicta? Consequatur, ullam accusamus perspiciatis
+            consequuntur neque at animi aut sint. Vero.
+          </p>
+        </div>
       </div>
     </div>
 
