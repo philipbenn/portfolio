@@ -183,17 +183,25 @@ nav ul li a:hover::after {
 }
 
 /*-------------- projects slideshow section -------------*/
-
 .project-image {
   width: 100%;
   border-radius: 10px;
   display: none;
-
   max-width: 900px;
   min-width: 900px;
   max-height: 500px;
   min-height: 500px;
 }
+
+@media (max-width: 768px) {
+  .project-image {
+    max-width: 400px;
+    min-width: 400px;
+    max-height: 200px;
+    min-height: 200px;
+  }
+}
+
 
 .project-image:first-child {
   display: block;
