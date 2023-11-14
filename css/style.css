@@ -258,7 +258,6 @@ nav ul li a:hover::after {
   margin: 0 auto;
   background-color: #222;
   padding: 20px;
-  border-radius: 10px;
 }
 
 .main-title {
