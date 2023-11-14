@@ -203,7 +203,6 @@ nav ul li a:hover::after {
   }
 }
 
-
 .project-image:first-child {
   display: block;
 }
@@ -257,14 +256,19 @@ nav ul li a:hover::after {
 .container {
   max-width: 800px;
   margin: 0 auto;
-  background-color: #fff;
+  background-color: #222;
   padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 10px ;
+  border-radius: 10px;
+}
+
+.main-title {
+  border-bottom: solid 3px #ff004f;
+  display: inline-block;
+  margin-bottom: 50px;
 }
 
 .container p {
-  color: black;
+  color: white;
 }
 
 #main-header {
@@ -293,6 +297,7 @@ nav ul li a:hover::after {
   margin-top: 40px;
 }
 
-.main-title, .contact-title, h2 {
-  color: #333;
+.contact-title,
+h2 {
+  color: #ff004f;
 }
