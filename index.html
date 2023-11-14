@@ -7,25 +7,24 @@
     <link rel="stylesheet" href="/css/style.css" />
   </head>
 
-<!--TODO MAKE PROJECT SECTION RESPONSIVE-->
+  <!--TODO MAKE PROJECT SECTION RESPONSIVE-->
 
   <body>
     <div class="page">
       <!-------------- Navbar Section -------------->
-      <p id="home"></p>
       <nav>
         <a href="#home">
           <img src="/Images/phillogo.png" class="logo" />
         </a>
         <ul>
           <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#">About</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
       </nav>
 
-      <div class="row top">
+      <div id="home" class="row top">
         <!-------------- Header Text Section -------------->
 
         <div class="header-text">
@@ -100,15 +99,44 @@
             <span class="dot"></span>
             <span class="dot"></span>
             <span class="dot"></span>
+            <p id="about"></p>
           </div>
         </div>
       </div>
 
+      <!-------------- About Me Section -------------->
+
+      <div class="container">
+        <header id="main-header">
+          <h1 class="main-title">About Me</h1>
+        </header>
+
+        <section id="about">
+          <div id="profile-picture" class="profile-picture">
+            <img src="/Images/philip.jpg" alt="Profile Picture" />
+          </div>
+          <div id="bio" class="bio">
+            <h2 class="bio-title">Philip Benn Schønning</h2>
+            <p>
+              As a dedicated data science student finishing my third semester, I
+              bring a passion for turning raw data into meaningful insights.
+              Specializing in frontend and fullstack development, I thrive on
+              creating seamless user experiences through innovative and
+              user-centric design.
+            </p>
+          </div>
+        </section>
+
+        <section id="contact" class="contact">
+          <h2 class="contact-title">Contact Me</h2>
+          <p>Email: <span id="email">philip@des-design.com</span></p>
+        </section>
+      </div>
+
+      <!-------------- Blom Biler Section -------------->
+
+      <p id="projects"></p>
       <div class="row">
-        <!-------------- Blom Biler Section -------------->
-
-        <p id="projects"></p>
-
         <div class="blombiler">
           <a
             class="github"
@@ -146,6 +174,7 @@
           </p>
         </div>
       </div>
+
       <!-------------- Bil Abonnoment Section -------------->
 
       <div class="row">
@@ -188,6 +217,7 @@
       </div>
 
       <!-------------- Kino xp Section -------------->
+
       <div class="row">
         <div class="kinoxp">
           <a
