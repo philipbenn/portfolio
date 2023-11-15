@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" href="/Images/portfolioiconnew.png" />
   </head>
 
   <!--TODO MAKE PROJECT SECTION RESPONSIVE-->
@@ -20,7 +21,7 @@
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
 
@@ -127,7 +128,7 @@
           </div>
         </section>
 
-        <section id="contact" class="contact">
+        <section id="contact-about" class="contact-about">
           <h2 class="contact-title">Contact Me</h2>
           <p>Email: <span id="email">philip@des-design.com</span></p>
         </section>
@@ -251,6 +252,42 @@
             consequuntur neque at animi aut sint. Vero.
           </p>
         </div>
+      </div>
+
+      <!-------------- Contact Section -------------->
+
+      <div class="container">
+        <p id="contact"></p>
+        <header id="main-header">
+          <h1 class="main-title">Contact Me</h1>
+        </header>
+
+        <section id="contact" class="contact">
+          <div class="contact-container">
+            <form
+              id="contactForm"
+              action="https://formspree.io/f/mrgwvqag"
+              method="POST"
+            >
+              <div class="form-group">
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required />
+              </div>
+
+              <div class="form-group">
+                <label for="description">Description:</label>
+                <textarea
+                  id="description"
+                  name="description"
+                  rows="4"
+                  required
+                ></textarea>
+              </div>
+
+              <button id="sendButton" type="submit">Send</button>
+            </form>
+          </div>
+        </section>
       </div>
     </div>
 

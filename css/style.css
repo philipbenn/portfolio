@@ -305,3 +305,54 @@ nav ul li a:hover::after {
 h2 {
   color: #ff004f;
 }
+
+/*-------------- Contact Section -------------*/
+
+.contact {
+  color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-title {
+  color: #ff004f;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#sendButton {
+  background-color: #ff004f;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#sendButton:hover {
+  background-color: #b10533;
+}
